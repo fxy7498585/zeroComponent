@@ -1,10 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import doToast from './components/Toast/index';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" onClick={() => {
+      console.log(1)
+      doToast({ text: 'this is dotoast' })
+    }}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
