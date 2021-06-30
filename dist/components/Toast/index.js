@@ -18,7 +18,7 @@ var doToast = (function () {
         }
         timer = setInterval(function () {
             var _a;
-            (document === null || document === void 0 ? void 0 : document.getElementById('toast_wrapper')) && ((_a = document === null || document === void 0 ? void 0 : document.getElementById('toast_wrapper')) === null || _a === void 0 ? void 0 : _a.remove());
+            (_a = document === null || document === void 0 ? void 0 : document.getElementById('toast_wrapper')) === null || _a === void 0 ? void 0 : _a.remove();
         }, options.dealy || 2000);
     };
 })();

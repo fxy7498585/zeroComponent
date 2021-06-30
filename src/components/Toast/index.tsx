@@ -27,7 +27,7 @@ const doToast = (() => {
             clearInterval(timer)
         }
         timer = setInterval(() => {
-            document?.getElementById('toast_wrapper') && document?.getElementById('toast_wrapper')?.remove()
+            document?.getElementById('toast_wrapper')?.remove()
         }, options.dealy || 2000)
     }
 })()
